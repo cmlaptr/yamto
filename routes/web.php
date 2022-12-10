@@ -20,8 +20,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-route::get('/signin', function (){
-    return view('auth.signin');
+route::get('/login', function (){
+    return view('auth.login');
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
